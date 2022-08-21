@@ -40,39 +40,37 @@ As one of our first steps, we tried to find the most frequent genres among the m
  ![image](https://user-images.githubusercontent.com/73087167/185809873-b8186708-5ad7-499d-856c-703cf8555141.png)
 Figure 4- Most frequent genres of movies in IMDB dataset
 We also find the most frequent words in movies description. Figure 3 shows the results.
- ![image](https://user-images.githubusercontent.com/73087167/185809877-34e97c07-43b8-4f44-a2c7-d64e4bb9ea2d.png)
 
+![image](https://user-images.githubusercontent.com/73087167/185809877-34e97c07-43b8-4f44-a2c7-d64e4bb9ea2d.png)
 Figure 5- Most frequent words in movies descriptions
 As can be seen in figure 3, almost all of the listed terms are the stopwords. Therefore, we used the “nltk” library of python to omit the stop words and other useless characters from movies description. Figure 4 shows the results of the analysis. 
- ![image](https://user-images.githubusercontent.com/73087167/185809882-af9b3848-67aa-4bdc-b1c7-c9e7c3c94eed.png)
-
+![image](https://user-images.githubusercontent.com/73087167/185809882-af9b3848-67aa-4bdc-b1c7-c9e7c3c94eed.png)
 Figure 6- Most frequent terms except stopwords
 Finally, by using machine learning techniques, we trained a model to predict the genre of movies based on their description. Because of the great diversity in movie descriptions, the model has a low accuracy of around 50%. Figures 5 through 7 are some of the results of the model prediction.
  ![image](https://user-images.githubusercontent.com/73087167/185809887-267a3aa0-787c-4a33-81c0-ebf624a30b3f.png)
-
 Figure 7- Model prediction 1
- ![image](https://user-images.githubusercontent.com/73087167/185809889-037ed275-6177-4420-8ede-dbb46213edc5.png)
+
+![image](https://user-images.githubusercontent.com/73087167/185809889-037ed275-6177-4420-8ede-dbb46213edc5.png)
 ![image](https://user-images.githubusercontent.com/73087167/185809892-6efd4cad-1bea-4bbf-98c3-2a825dceeb71.png)
 
 Figure 8- Model prediction 2
- ![image](https://user-images.githubusercontent.com/73087167/185809897-edca4af0-ac0f-420f-900e-75c762c062b9.png)
-
+![image](https://user-images.githubusercontent.com/73087167/185809897-edca4af0-ac0f-420f-900e-75c762c062b9.png)
 Figure 9- Model prediction 3
 
 Another method that we have tried on the dataset is the heat map, which shows the correlation between different features of the dataset. 
- ![image](https://user-images.githubusercontent.com/73087167/185809900-8a4f1332-7f19-4570-9a91-43ee7e3f1d09.png)
+![image](https://user-images.githubusercontent.com/73087167/185809900-8a4f1332-7f19-4570-9a91-43ee7e3f1d09.png)
 
 Figure 10- Heat map of the dataset
 To figure out the relation of the production year and the average rate of each movie, we implemented a marginal plot analysis, as shown in Figure 9.
- ![Uploading image.png…]()
+![Uploading image.png…]()
 
 Figure 11- Marginal plot of the average rate of films based on their production year
 As it is depicted in figure 9, most movies are rated around 6 to 7. Moreover, newer movies have a higher average IMDB rate.
 
-Conclusion and Findings
-Part I
+## Conclusion and Findings
+## Part I
 As predicted, most of the movies have the same genre as “Interstellar,” which is Adventure, Drama, and Sci-Fi. This model has been generated using the top 3000 frequent words. To get better results, this number can be increased, but it has a negative impact on computational time. Furthermore, it seems that as we increase the dimension of the movie vectors, the cosine similarity decrease. Also, to evaluate the results, k-grams and other distance/similarity functions such as Lp distance and Mahalanobis distance can be used.
-Part II
+## Part II
 As expected, most movies have a rating of around 6 and 7. Moreover, newer movies have higher scores due to multiple reasons like availability, production quality, actors and etc. One of the key findings of this project is that, if the descriptions of the movies are written in a more general way, it is possible to suggest similar movies to a person with a specific taste of movies. By “gerenal way,” the author means that the description only narrates the storyline and excluding the name of actors and proper nouns.
 
 
